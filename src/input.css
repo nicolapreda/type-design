@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 
+  TODO: Add your font files to public/assets/fonts/
+  and update the @font-face rule below.
+*/
+
+/*
+@font-face {
+  font-family: 'YourFontName';
+  src: url('../assets/fonts/YourFontName.woff2') format('woff2'),
+       url('../assets/fonts/YourFontName.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+*/
+
+/* Apply the font to the body or specific elements */
+/*
+body {
+  font-family: 'YourFontName', sans-serif;
+}
+*/
+
+/* Flip Card Utilities */
+.perspective-1000 {
+  perspective: 1000px;
+}
+
+.transform-style-3d {
+  transform-style: preserve-3d;
+}
+
+.backface-hidden {
+  backface-visibility: hidden;
+}
+
+.rotate-y-180 {
+  transform: rotateY(180deg);
+}
+
+.group:hover .group-hover\:rotate-y-180 {
+  transform: rotateY(180deg);
+}
