@@ -3,8 +3,8 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Letterarium | Type Design</title>
-        <meta name="description" content="Letterarium - A type design project by Martina De Boni, Dylan Hernandez, Nicola Preda, Marta Rossi." />
+        <title>The Glyfarium | Type Design</title>
+        <meta name="description" content="The Glyfarium - A type design project." />
         
         <!-- CSS -->
         <link href="./assets/style.css" rel="stylesheet" />
@@ -13,732 +13,197 @@
         <!-- Font Awesome -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
     </head>
-    <body class="bg-brand-dark text-white font-serif antialiased selection:bg-brand-red selection:text-white">
+    <body class="bg-brand-cream text-brand-blue font-serif antialiased selection:bg-brand-blue selection:text-brand-cream overflow-x-hidden">
+        
+        <!-- Main Container with Consistent Width -->
+        <div class="w-full max-w-[85%] mx-auto relative bg-brand-cream min-h-screen my-8">
 
-        <!-- HERO SECTION -->
-        <section class="relative min-h-screen flex items-center justify-center p-8 border-[20px] border-brand-dark">
-            <!-- Decorative Border Container -->
-            <div class="absolute inset-4 border border-brand-red/30 pointer-events-none"></div>
-            <div class="absolute inset-6 border border-brand-red/50 pointer-events-none"></div>
+            <!-- HERO SECTION -->
+            <header class="relative pt-16 pb-16 px-4 text-center">
+                <div class="w-full mx-auto relative z-10 border-b border-brand-blue/30 pb-12">
+                    <h2 class="text-3xl md:text-5xl uppercase tracking-widest font-bold mb-6">To The People</h2>
 
-            <div class="text-center z-10 max-w-4xl mx-auto">
-                <p class="text-brand-cream/80 uppercase tracking-[0.2em] mb-8 text-lg font-light">Type Design</p>
-                
-                <div class="relative py-12 mb-12">
-                    <!-- Top Decoration Placeholder -->
-                    <div class="text-brand-cream text-4xl mb-4 opacity-80">
-                         <i class="fas fa-leaf"></i> <i class="fas fa-crown"></i> <i class="fas fa-leaf transform scale-x-[-1]"></i>
+                    <!-- Top Decoration -->
+                    <div class="flex items-center justify-center gap-2 mb-8 opacity-80 w-full">
+                        <img src="./assets/grazia_1.png" class="h-8 md:h-12 w-auto transform scale-x-[-1]" alt="" />
+                        <div class="h-px bg-brand-blue w-full"></div>
+                        <img src="./assets/grazia_1.png" class="h-8 md:h-12 w-auto" alt="" />
                     </div>
 
-                    <h1 class="text-6xl md:text-9xl font-bold tracking-tight text-white mb-4">
-                        Letterarium
+                    <p class="text-2xl italic mb-8">We present</p>
+                    
+                    <p class="text-sm uppercase tracking-[0.3em] mb-2">The</p>
+                    <!-- Huge Title -->
+                    <h1 class="text-[12vw] leading-none font-bold tracking-tighter mb-12 scale-y-110">
+                        Glyfarium
                     </h1>
-                    <span class="absolute top-0 right-0 text-brand-cream/50 text-xl font-mono">02</span>
 
-                    <!-- Bottom Decoration Placeholder -->
-                    <div class="text-brand-cream text-4xl mt-4 opacity-80">
-                        <i class="fas fa-leaf transform rotate-180"></i> <i class="fas fa-crown transform rotate-180"></i> <i class="fas fa-leaf transform scale-x-[-1] rotate-180"></i>
+                    <!-- Capital Illustration -->
+                    <div class="relative w-full max-w-4xl mx-auto mb-16">
+                        <img src="./assets/colonna 1.png" alt="Architectural Capital" class="w-full h-auto drop-shadow-xl" />
+                    </div>
+
+                    <!-- Navigation Buttons -->
+                    <div class="flex flex-wrap justify-center gap-8 md:gap-24">
+                        <a href="#references" class="relative group inline-flex items-center justify-center w-64 h-24 transition-transform hover:scale-105">
+                            <img src="./assets/cornice_bottoni.png" class="absolute inset-0 w-full h-full object-fill" alt="" />
+                            <span class="relative z-10 text-xl font-bold uppercase tracking-widest pt-1">References</span>
+                        </a>
+                        <a href="#archive" class="relative group inline-flex items-center justify-center w-64 h-24 transition-transform hover:scale-105">
+                            <img src="./assets/cornice_bottoni.png" class="absolute inset-0 w-full h-full object-fill" alt="" />
+                            <span class="relative z-10 text-xl font-bold uppercase tracking-widest pt-1">Archive</span>
+                        </a>
+                        <a href="#story" class="relative group inline-flex items-center justify-center w-64 h-24 transition-transform hover:scale-105">
+                            <img src="./assets/cornice_bottoni.png" class="absolute inset-0 w-full h-full object-fill" alt="" />
+                            <span class="relative z-10 text-xl font-bold uppercase tracking-widest pt-1">Story</span>
+                        </a>
                     </div>
                 </div>
+            </header>
 
-                <div class="border-t border-brand-red/30 pt-8 mt-8">
-                    <p class="text-brand-cream/70 text-sm md:text-base tracking-wide">
-                        Martina De Boni - Dylan Hernandez - Nicola Preda - Marta Rossi
-                    </p>
-                </div>
-            </div>
-        </section>
-
-        <!-- CONCEPT SECTION (Dark) -->
-        <section class="relative py-24 px-4 bg-brand-dark overflow-hidden">
-            <div class="max-w-5xl mx-auto relative">
-                <!-- Ornate Frame Placeholder -->
-                <div class="border-4 border-brand-cream/10 p-8 md:p-16 relative">
-                    <div class="absolute top-0 left-0 w-16 h-16 border-t-4 border-l-4 border-brand-cream/30 -mt-2 -ml-2"></div>
-                    <div class="absolute top-0 right-0 w-16 h-16 border-t-4 border-r-4 border-brand-cream/30 -mt-2 -mr-2"></div>
-                    <div class="absolute bottom-0 left-0 w-16 h-16 border-b-4 border-l-4 border-brand-cream/30 -mb-2 -ml-2"></div>
-                    <div class="absolute bottom-0 right-0 w-16 h-16 border-b-4 border-r-4 border-brand-cream/30 -mb-2 -mr-2"></div>
-
-                    <div class="grid md:grid-cols-2 gap-12 items-center">
-                        <div class="prose prose-invert prose-lg">
-                            <p class="text-xl leading-relaxed text-brand-cream/90 font-light italic">
-                                "Nel mondo di Myra il tempo era composto da ventisette lettere viventi chiamate 'Cronoglifidi', spiriti dall'aspetto di lettere animate, ognuna con la forma e i movimenti di un animale diverso."
-                            </p>
-                            <p class="text-brand-cream/70">
-                                Quando una di queste lettere comparve, il tempo cominciò a deformarsi. Per fermare il suo ringiovanimento, Myra dovette ritrovare questi esseri e trascriverli nel Bestiario del Tempo Spezzato.
-                            </p>
-                        </div>
-                        <div class="prose prose-invert prose-lg">
-                            <p class="text-brand-cream/70">
-                                Un libro che le era stato donato da un passante misterioso, in cui erano raccolte le loro forme e i loro significati. Ogni Cronoglifide che recuperò le restituì un ricordo. La sua storia parlava di identità, memoria e del tentativo di ritrovarsi mentre tutto, fuori e dentro di lei, si muoveva al contrario.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- RESEARCH SECTION (Light - "Immagina") -->
-        <section class="py-24 bg-brand-cream text-brand-dark relative">
-            <div class="max-w-6xl mx-auto px-4">
-                <!-- Header with Decoration -->
-                <div class="text-center mb-16 relative">
-                    <div class="flex items-center justify-center gap-4 mb-4">
-                        <div class="h-px bg-brand-red w-24"></div>
-                        <div class="text-brand-red text-2xl"><i class="fas fa-scroll"></i></div>
-                        <div class="h-px bg-brand-red w-24"></div>
-                    </div>
-                    <h2 class="text-6xl md:text-8xl font-bold text-brand-red mb-8">Immagina</h2>
-                </div>
-
-                <div class="grid md:grid-cols-2 gap-16 text-lg leading-relaxed border-t border-b border-brand-red/20 py-12">
-                    <div>
-                        <p class="mb-6">
-                            Nei bestiari antichi, gli animali venivano spesso disegnati in modo impreciso: creature mai viste, descritte per sentito dire, nate dall'immaginazione più che dall'osservazione. Quelle figure "sbagliate" erano però piene di vita, sospese tra realtà e mito.
-                        </p>
+            <!-- STORY SECTION -->
+            <section id="story" class="py-16 px-8 md:px-16 w-full mx-auto">
+                <div class="grid md:grid-cols-2 gap-12 items-start text-justify leading-relaxed text-lg md:text-xl">
+                    <div class="relative">
+                        <!-- Drop Cap Image -->
+                        <img src="./assets/glifo.png" class="float-left w-32 h-32 mr-6 mb-2 object-contain p-2" alt="R" />
                         <p>
-                            Per questo si vuole interpretare l'errore come forma creativa: lettere che trovano armonia nelle loro imperfezioni.
+                            orem ipsum dolor sit amet consectetur. Pulvinar eget semper sagittis morbi diam neque in mi. Pharetra placerat id nunc est et quis. Quis elit condimentum pretium laoreet mauris scelerisque ultricies. Scelerisque ut in quam platea nulla augue tincidunt bibendum quam. Id vitae vitae tristique risus interdum. Bibendum duis duis scelerisque amet dolor quam. Rutrum porttitor.
+                        </p>
+                        <p class="text-sm mt-4 text-brand-blue/60 italic">
+                            Lorem ipsum dolor sit amet consectetur. Arcu purus volutpat leo diam posuere faucibus adipiscing a orci.
                         </p>
                     </div>
                     <div>
-                        <p class="mb-6">
-                            Curve irregolari, dettagli insoliti e proporzioni sbilanciate rendono ogni glifo una piccola creatura tipografica.
-                        </p>
                         <p>
-                            Come i bestiari di un tempo, questo progetto non vuole imitare la realtà, ma reinventarla. È un font che racconta storie e invita a guardare le parole come esseri viventi: imperfetti, fantastici, e per questo unici.
+                            orem ipsum dolor sit amet consectetur. Pulvinar eget semper sagittis morbi diam neque in mi. Pharetra placerat id nunc est et quis. Quis elit condimentum pretium laoreet mauris scelerisque ultricies. Scelerisque ut in quam platea nulla augue tincidunt bibendum quam. Id vitae vitae tristique risus interdum. Bibendum duis duis scelerisque amet dolor quam. Rutrum porttitor.
                         </p>
                     </div>
                 </div>
-                
-                <div class="text-center mt-12 text-brand-red text-4xl opacity-50">
-                    <i class="fas fa-dragon"></i>
+            </section>
+
+                        <divider class="relative mt-32 pb-24 px-4">
+                <div class="max-w-5xl mx-auto">
+                    <img src="./assets/footer.png" class="w-full h-auto object-contain" alt="Footer Decoration" />
                 </div>
-            </div>
-        </section>
+            </divider>
 
-        <!-- ALPHABET BESTIARY (Flip Cards) -->
-        <section class="py-24 bg-brand-dark text-brand-cream relative overflow-hidden">
-             <!-- Decorative Background -->
-            <div class="absolute top-0 left-0 w-full h-full opacity-5 pointer-events-none" 
-                 style="background-image: url('data:image/svg+xml,%3Csvg width=\'60\' height=\'60\' viewBox=\'0 0 60 60\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cg fill=\'none\' fill-rule=\'evenodd\'%3E%3Cg fill=\'%23f5f3ee\' fill-opacity=\'1\'%3E%3Cpath d=\'M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z\'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E');">
-            </div>
 
-            <div class="max-w-7xl mx-auto px-4 relative z-10">
-                <div class="text-center mb-16">
-                    <h2 class="text-5xl md:text-7xl font-bold text-brand-red mb-4">Bestiario</h2>
-                    <p class="text-xl text-brand-cream/70 italic">Hover over the letters to reveal their story</p>
-                </div>
+            
+            <!-- ALPHABET BESTIARY (Flip Cards) -->
+            <section id="archive" class="py-24 px-4 relative">
+                <div class="w-full mx-auto">
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-8 justify-items-center">
+                        <!-- CARD TEMPLATE (Repeated for A-Z) -->
+                        <!-- Letter A -->
+                        <div class="group h-[550px] w-full max-w-[450px] perspective-1000 relative flex justify-center">
+                            <!-- Butterfly Decoration -->
+                            <img src="./assets/farfalla.png" class="absolute -top-8 -left-8 w-32 z-20 transform -rotate-12 drop-shadow-md pointer-events-none" alt="" />
 
-                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6">
-                    <!-- Letter A -->
-                    <div class="group h-96 perspective-1000">
-                        <div class="relative w-full h-full transition-transform duration-300 transform-style-3d group-hover:rotate-y-180">
-                            <!-- Front -->
-                            <div class="absolute inset-0 bg-brand-red/10 border-2 border-brand-red/30 flex items-center justify-center backface-hidden rounded-xl">
-                                <span class="text-9xl font-bold text-brand-cream">A</span>
-                                <div class="absolute bottom-6 text-sm text-brand-red uppercase tracking-[0.2em]">Alpha</div>
+                            <div class="relative w-full h-full transition-transform duration-500 transform-style-3d group-hover:rotate-y-180">
+                                <!-- Front -->
+                                <div class="absolute inset-0 backface-hidden flex items-center justify-center p-6">
+                                    <!-- Frame Image -->
+                                    <img src="./assets/cornice_card_carattere.png" class="absolute inset-0 w-full h-full object-contain pointer-events-none" alt="Frame" />
+                                    <!-- Letter -->
+                                    <span class="text-[12rem] font-bold relative z-10 mt-4">A</span>
+                                </div>
+                                
+                                <!-- Back -->
+                                <div class="absolute inset-0 backface-hidden rotate-y-180 flex items-center justify-center p-12 text-center bg-transparent">
+                                    <!-- Frame Image on Back too -->
+                                    <img src="./assets/cornice_card_carattere.png" class="absolute inset-0 w-full h-full object-contain pointer-events-none" alt="Frame" />
+                                    
+                                    <div class="relative z-10 flex flex-col items-center justify-center h-full pt-8 px-8">
+                                        <h3 class="text-5xl font-bold mb-6 text-brand-blue">Griffin</h3>
+                                        <p class="text-2xl italic font-serif leading-relaxed">Half eagle, half lion. Guardian of treasures.</p>
+                                    </div>
+                                </div>
                             </div>
-                            <!-- Back -->
-                            <div class="absolute inset-0 bg-brand-red text-brand-cream p-8 flex flex-col items-center justify-center text-center backface-hidden rotate-y-180 rounded-xl shadow-2xl border-2 border-brand-cream/20">
-                                <div class="text-4xl mb-4 opacity-50"><i class="fas fa-dragon"></i></div>
-                                <h3 class="text-3xl font-bold mb-4">The Griffin</h3>
-                                <p class="text-lg leading-relaxed font-light">Half eagle, half lion. A symbol of divine power and guardianship over treasures.</p>
-                            </div>
+                            <div class="absolute -bottom-10 text-center w-full font-bold uppercase tracking-widest text-sm">Alpha</div>
                         </div>
-                    </div>
 
-                    <!-- Letter B -->
-                    <div class="group h-96 perspective-1000">
-                        <div class="relative w-full h-full transition-transform duration-300 transform-style-3d group-hover:rotate-y-180">
-                            <div class="absolute inset-0 bg-brand-red/10 border-2 border-brand-red/30 flex items-center justify-center backface-hidden rounded-xl">
-                                <span class="text-9xl font-bold text-brand-cream">B</span>
-                                <div class="absolute bottom-6 text-sm text-brand-red uppercase tracking-[0.2em]">Beta</div>
+                        <!-- Letter B -->
+                        <div class="group h-[550px] w-full max-w-[450px] perspective-1000 relative flex justify-center">
+                            <div class="relative w-full h-full transition-transform duration-500 transform-style-3d group-hover:rotate-y-180">
+                                <div class="absolute inset-0 backface-hidden flex items-center justify-center p-6">
+                                    <img src="./assets/cornice_card_carattere.png" class="absolute inset-0 w-full h-full object-contain pointer-events-none" alt="Frame" />
+                                    <span class="text-[12rem] font-bold relative z-10 mt-4">B</span>
+                                </div>
+                                <div class="absolute inset-0 backface-hidden rotate-y-180 flex items-center justify-center p-12 text-center bg-transparent">
+                                    <img src="./assets/cornice_card_carattere.png" class="absolute inset-0 w-full h-full object-contain pointer-events-none" alt="Frame" />
+                                    <div class="relative z-10 flex flex-col items-center justify-center h-full pt-8 px-8">
+                                        <h3 class="text-5xl font-bold mb-6 text-brand-blue">Basilisk</h3>
+                                        <p class="text-2xl italic font-serif leading-relaxed">King of serpents.</p>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="absolute inset-0 bg-brand-red text-brand-cream p-8 flex flex-col items-center justify-center text-center backface-hidden rotate-y-180 rounded-xl shadow-2xl border-2 border-brand-cream/20">
-                                <div class="text-4xl mb-4 opacity-50"><i class="fas fa-snake"></i></div>
-                                <h3 class="text-3xl font-bold mb-4">The Basilisk</h3>
-                                <p class="text-lg leading-relaxed font-light">King of serpents. Its gaze brings death to all who look upon it.</p>
-                            </div>
+                            <div class="absolute -bottom-10 text-center w-full font-bold uppercase tracking-widest text-sm">Beta</div>
                         </div>
-                    </div>
 
-                    <!-- Letter C -->
-                    <div class="group h-96 perspective-1000">
-                        <div class="relative w-full h-full transition-transform duration-300 transform-style-3d group-hover:rotate-y-180">
-                            <div class="absolute inset-0 bg-brand-red/10 border-2 border-brand-red/30 flex items-center justify-center backface-hidden rounded-xl">
-                                <span class="text-9xl font-bold text-brand-cream">C</span>
-                                <div class="absolute bottom-6 text-sm text-brand-red uppercase tracking-[0.2em]">Gamma</div>
+                        <!-- Letter C -->
+                        <div class="group h-[550px] w-full max-w-[450px] perspective-1000 relative flex justify-center">
+                            <div class="relative w-full h-full transition-transform duration-500 transform-style-3d group-hover:rotate-y-180">
+                                <div class="absolute inset-0 backface-hidden flex items-center justify-center p-6">
+                                    <img src="./assets/cornice_card_carattere.png" class="absolute inset-0 w-full h-full object-contain pointer-events-none" alt="Frame" />
+                                    <span class="text-[12rem] font-bold relative z-10 mt-4">C</span>
+                                </div>
+                                <div class="absolute inset-0 backface-hidden rotate-y-180 flex items-center justify-center p-12 text-center bg-transparent">
+                                    <img src="./assets/cornice_card_carattere.png" class="absolute inset-0 w-full h-full object-contain pointer-events-none" alt="Frame" />
+                                    <div class="relative z-10 flex flex-col items-center justify-center h-full pt-8 px-8">
+                                        <h3 class="text-5xl font-bold mb-6 text-brand-blue">Chimera</h3>
+                                        <p class="text-2xl italic font-serif leading-relaxed">Lion, goat, snake hybrid.</p>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="absolute inset-0 bg-brand-red text-brand-cream p-8 flex flex-col items-center justify-center text-center backface-hidden rotate-y-180 rounded-xl shadow-2xl border-2 border-brand-cream/20">
-                                <div class="text-4xl mb-4 opacity-50"><i class="fas fa-paw"></i></div>
-                                <h3 class="text-3xl font-bold mb-4">The Chimera</h3>
-                                <p class="text-lg leading-relaxed font-light">A fire-breathing hybrid creature composed of a lion, a goat, and a snake.</p>
-                            </div>
+                            <div class="absolute -bottom-10 text-center w-full font-bold uppercase tracking-widest text-sm">Gamma</div>
                         </div>
-                    </div>
 
-                    <!-- Letter D -->
-                    <div class="group h-96 perspective-1000">
-                        <div class="relative w-full h-full transition-transform duration-300 transform-style-3d group-hover:rotate-y-180">
-                            <div class="absolute inset-0 bg-brand-red/10 border-2 border-brand-red/30 flex items-center justify-center backface-hidden rounded-xl">
-                                <span class="text-9xl font-bold text-brand-cream">D</span>
-                                <div class="absolute bottom-6 text-sm text-brand-red uppercase tracking-[0.2em]">Delta</div>
+                         <!-- Letter D -->
+                        <div class="group h-[550px] w-full max-w-[450px] perspective-1000 relative flex justify-center">
+                            <div class="relative w-full h-full transition-transform duration-500 transform-style-3d group-hover:rotate-y-180">
+                                <div class="absolute inset-0 backface-hidden flex items-center justify-center p-6">
+                                    <img src="./assets/cornice_card_carattere.png" class="absolute inset-0 w-full h-full object-contain pointer-events-none" alt="Frame" />
+                                    <span class="text-[12rem] font-bold relative z-10 mt-4">D</span>
+                                </div>
+                                <div class="absolute inset-0 backface-hidden rotate-y-180 flex items-center justify-center p-12 text-center bg-transparent">
+                                    <img src="./assets/cornice_card_carattere.png" class="absolute inset-0 w-full h-full object-contain pointer-events-none" alt="Frame" />
+                                    <div class="relative z-10 flex flex-col items-center justify-center h-full pt-8 px-8">
+                                        <h3 class="text-5xl font-bold mb-6 text-brand-blue">Dragon</h3>
+                                        <p class="text-2xl italic font-serif leading-relaxed">Legendary power.</p>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="absolute inset-0 bg-brand-red text-brand-cream p-8 flex flex-col items-center justify-center text-center backface-hidden rotate-y-180 rounded-xl shadow-2xl border-2 border-brand-cream/20">
-                                <div class="text-4xl mb-4 opacity-50"><i class="fas fa-fire"></i></div>
-                                <h3 class="text-3xl font-bold mb-4">The Dragon</h3>
-                                <p class="text-lg leading-relaxed font-light">A legendary creature of immense power, often guarding hoards of gold.</p>
-                            </div>
+                            <div class="absolute -bottom-10 text-center w-full font-bold uppercase tracking-widest text-sm">Delta</div>
                         </div>
-                    </div>
 
-                     <!-- Letter E -->
-                    <div class="group h-96 perspective-1000">
-                        <div class="relative w-full h-full transition-transform duration-300 transform-style-3d group-hover:rotate-y-180">
-                            <div class="absolute inset-0 bg-brand-red/10 border-2 border-brand-red/30 flex items-center justify-center backface-hidden rounded-xl">
-                                <span class="text-9xl font-bold text-brand-cream">E</span>
-                                <div class="absolute bottom-6 text-sm text-brand-red uppercase tracking-[0.2em]">Epsilon</div>
+                         <!-- Letter E -->
+                        <div class="group h-[550px] w-full max-w-[450px] perspective-1000 relative flex justify-center">
+                            <div class="relative w-full h-full transition-transform duration-500 transform-style-3d group-hover:rotate-y-180">
+                                <div class="absolute inset-0 backface-hidden flex items-center justify-center p-12">
+                                    <img src="./assets/cornice_card_carattere.png" class="absolute inset-0 w-full h-full object-contain pointer-events-none" alt="Frame" />
+                                    <!-- Letter Image -->
+                                    <img src="./assets/E.png" class="relative z-10 w-[55%] h-[55%] object-contain" alt="E" />
+                                </div>
+                                <div class="absolute inset-0 backface-hidden rotate-y-180 flex items-center justify-center p-12 text-center bg-transparent">
+                                    <img src="./assets/cornice_card_carattere.png" class="absolute inset-0 w-full h-full object-contain pointer-events-none" alt="Frame" />
+                                    <div class="relative z-10 flex flex-col items-center justify-center h-full pt-8 px-8">
+                                        <h3 class="text-5xl font-bold mb-6 text-brand-blue">Elf</h3>
+                                        <p class="text-2xl italic font-serif leading-relaxed">Magical being.</p>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="absolute inset-0 bg-brand-red text-brand-cream p-8 flex flex-col items-center justify-center text-center backface-hidden rotate-y-180 rounded-xl shadow-2xl border-2 border-brand-cream/20">
-                                <div class="text-4xl mb-4 opacity-50"><i class="fas fa-magic"></i></div>
-                                <h3 class="text-3xl font-bold mb-4">The Elf</h3>
-                                <p class="text-lg leading-relaxed font-light">A supernatural being of folklore, known for magic and archery.</p>
-                            </div>
+                            <div class="absolute -bottom-10 text-center w-full font-bold uppercase tracking-widest text-sm">Epsilon</div>
                         </div>
                     </div>
-
-                     <!-- Letter F -->
-                    <div class="group h-96 perspective-1000">
-                        <div class="relative w-full h-full transition-transform duration-300 transform-style-3d group-hover:rotate-y-180">
-                            <div class="absolute inset-0 bg-brand-red/10 border-2 border-brand-red/30 flex items-center justify-center backface-hidden rounded-xl">
-                                <span class="text-9xl font-bold text-brand-cream">F</span>
-                                <div class="absolute bottom-6 text-sm text-brand-red uppercase tracking-[0.2em]">Zeta</div>
-                            </div>
-                            <div class="absolute inset-0 bg-brand-red text-brand-cream p-8 flex flex-col items-center justify-center text-center backface-hidden rotate-y-180 rounded-xl shadow-2xl border-2 border-brand-cream/20">
-                                <div class="text-4xl mb-4 opacity-50"><i class="fas fa-music"></i></div>
-                                <h3 class="text-3xl font-bold mb-4">The Faun</h3>
-                                <p class="text-lg leading-relaxed font-light">Half human, half goat. A symbol of peace and fertility.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Letter G -->
-                    <div class="group h-96 perspective-1000">
-                        <div class="relative w-full h-full transition-transform duration-300 transform-style-3d group-hover:rotate-y-180">
-                            <div class="absolute inset-0 bg-brand-red/10 border-2 border-brand-red/30 flex items-center justify-center backface-hidden rounded-xl">
-                                <span class="text-9xl font-bold text-brand-cream">G</span>
-                                <div class="absolute bottom-6 text-sm text-brand-red uppercase tracking-[0.2em]">Gamma</div>
-                            </div>
-                            <div class="absolute inset-0 bg-brand-red text-brand-cream p-8 flex flex-col items-center justify-center text-center backface-hidden rotate-y-180 rounded-xl shadow-2xl border-2 border-brand-cream/20">
-                                <div class="text-4xl mb-4 opacity-50"><i class="fas fa-gem"></i></div>
-                                <h3 class="text-3xl font-bold mb-4">The Gargoyle</h3>
-                                <p class="text-lg leading-relaxed font-light">A stone guardian that comes to life to protect its sanctuary.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Letter H -->
-                    <div class="group h-96 perspective-1000">
-                        <div class="relative w-full h-full transition-transform duration-300 transform-style-3d group-hover:rotate-y-180">
-                            <div class="absolute inset-0 bg-brand-red/10 border-2 border-brand-red/30 flex items-center justify-center backface-hidden rounded-xl">
-                                <span class="text-9xl font-bold text-brand-cream">H</span>
-                                <div class="absolute bottom-6 text-sm text-brand-red uppercase tracking-[0.2em]">Eta</div>
-                            </div>
-                            <div class="absolute inset-0 bg-brand-red text-brand-cream p-8 flex flex-col items-center justify-center text-center backface-hidden rotate-y-180 rounded-xl shadow-2xl border-2 border-brand-cream/20">
-                                <div class="text-4xl mb-4 opacity-50"><i class="fas fa-water"></i></div>
-                                <h3 class="text-3xl font-bold mb-4">The Hydra</h3>
-                                <p class="text-lg leading-relaxed font-light">A serpentine water monster with many heads. Cut one off, two more grow.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Letter I -->
-                    <div class="group h-96 perspective-1000">
-                        <div class="relative w-full h-full transition-transform duration-300 transform-style-3d group-hover:rotate-y-180">
-                            <div class="absolute inset-0 bg-brand-red/10 border-2 border-brand-red/30 flex items-center justify-center backface-hidden rounded-xl">
-                                <span class="text-9xl font-bold text-brand-cream">I</span>
-                                <div class="absolute bottom-6 text-sm text-brand-red uppercase tracking-[0.2em]">Iota</div>
-                            </div>
-                            <div class="absolute inset-0 bg-brand-red text-brand-cream p-8 flex flex-col items-center justify-center text-center backface-hidden rotate-y-180 rounded-xl shadow-2xl border-2 border-brand-cream/20">
-                                <div class="text-4xl mb-4 opacity-50"><i class="fas fa-fire-alt"></i></div>
-                                <h3 class="text-3xl font-bold mb-4">The Ifrit</h3>
-                                <p class="text-lg leading-relaxed font-light">A powerful winged spirit of fire, known for strength and cunning.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Letter J -->
-                    <div class="group h-96 perspective-1000">
-                        <div class="relative w-full h-full transition-transform duration-300 transform-style-3d group-hover:rotate-y-180">
-                            <div class="absolute inset-0 bg-brand-red/10 border-2 border-brand-red/30 flex items-center justify-center backface-hidden rounded-xl">
-                                <span class="text-9xl font-bold text-brand-cream">J</span>
-                                <div class="absolute bottom-6 text-sm text-brand-red uppercase tracking-[0.2em]">Juliet</div>
-                            </div>
-                            <div class="absolute inset-0 bg-brand-red text-brand-cream p-8 flex flex-col items-center justify-center text-center backface-hidden rotate-y-180 rounded-xl shadow-2xl border-2 border-brand-cream/20">
-                                <div class="text-4xl mb-4 opacity-50"><i class="fas fa-rabbit"></i></div>
-                                <h3 class="text-3xl font-bold mb-4">The Jackalope</h3>
-                                <p class="text-lg leading-relaxed font-light">A jackrabbit with antelope horns, swift and elusive.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Letter K -->
-                    <div class="group h-96 perspective-1000">
-                        <div class="relative w-full h-full transition-transform duration-300 transform-style-3d group-hover:rotate-y-180">
-                            <div class="absolute inset-0 bg-brand-red/10 border-2 border-brand-red/30 flex items-center justify-center backface-hidden rounded-xl">
-                                <span class="text-9xl font-bold text-brand-cream">K</span>
-                                <div class="absolute bottom-6 text-sm text-brand-red uppercase tracking-[0.2em]">Kappa</div>
-                            </div>
-                            <div class="absolute inset-0 bg-brand-red text-brand-cream p-8 flex flex-col items-center justify-center text-center backface-hidden rotate-y-180 rounded-xl shadow-2xl border-2 border-brand-cream/20">
-                                <div class="text-4xl mb-4 opacity-50"><i class="fas fa-ship"></i></div>
-                                <h3 class="text-3xl font-bold mb-4">The Kraken</h3>
-                                <p class="text-lg leading-relaxed font-light">A legendary cephalopod-like sea monster of giant size.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Letter L -->
-                    <div class="group h-96 perspective-1000">
-                        <div class="relative w-full h-full transition-transform duration-300 transform-style-3d group-hover:rotate-y-180">
-                            <div class="absolute inset-0 bg-brand-red/10 border-2 border-brand-red/30 flex items-center justify-center backface-hidden rounded-xl">
-                                <span class="text-9xl font-bold text-brand-cream">L</span>
-                                <div class="absolute bottom-6 text-sm text-brand-red uppercase tracking-[0.2em]">Lambda</div>
-                            </div>
-                            <div class="absolute inset-0 bg-brand-red text-brand-cream p-8 flex flex-col items-center justify-center text-center backface-hidden rotate-y-180 rounded-xl shadow-2xl border-2 border-brand-cream/20">
-                                <div class="text-4xl mb-4 opacity-50"><i class="fas fa-water"></i></div>
-                                <h3 class="text-3xl font-bold mb-4">The Leviathan</h3>
-                                <p class="text-lg leading-relaxed font-light">A sea serpent noted in theology and mythology.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Letter M -->
-                    <div class="group h-96 perspective-1000">
-                        <div class="relative w-full h-full transition-transform duration-300 transform-style-3d group-hover:rotate-y-180">
-                            <div class="absolute inset-0 bg-brand-red/10 border-2 border-brand-red/30 flex items-center justify-center backface-hidden rounded-xl">
-                                <span class="text-9xl font-bold text-brand-cream">M</span>
-                                <div class="absolute bottom-6 text-sm text-brand-red uppercase tracking-[0.2em]">Mu</div>
-                            </div>
-                            <div class="absolute inset-0 bg-brand-red text-brand-cream p-8 flex flex-col items-center justify-center text-center backface-hidden rotate-y-180 rounded-xl shadow-2xl border-2 border-brand-cream/20">
-                                <div class="text-4xl mb-4 opacity-50"><i class="fas fa-dungeon"></i></div>
-                                <h3 class="text-3xl font-bold mb-4">The Minotaur</h3>
-                                <p class="text-lg leading-relaxed font-light">A creature with the head of a bull and the body of a man.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Letter N -->
-                    <div class="group h-96 perspective-1000">
-                        <div class="relative w-full h-full transition-transform duration-300 transform-style-3d group-hover:rotate-y-180">
-                            <div class="absolute inset-0 bg-brand-red/10 border-2 border-brand-red/30 flex items-center justify-center backface-hidden rounded-xl">
-                                <span class="text-9xl font-bold text-brand-cream">N</span>
-                                <div class="absolute bottom-6 text-sm text-brand-red uppercase tracking-[0.2em]">Nu</div>
-                            </div>
-                            <div class="absolute inset-0 bg-brand-red text-brand-cream p-8 flex flex-col items-center justify-center text-center backface-hidden rotate-y-180 rounded-xl shadow-2xl border-2 border-brand-cream/20">
-                                <div class="text-4xl mb-4 opacity-50"><i class="fas fa-leaf"></i></div>
-                                <h3 class="text-3xl font-bold mb-4">The Nymph</h3>
-                                <p class="text-lg leading-relaxed font-light">A minor female nature deity associated with a specific location.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Letter O -->
-                    <div class="group h-96 perspective-1000">
-                        <div class="relative w-full h-full transition-transform duration-300 transform-style-3d group-hover:rotate-y-180">
-                            <div class="absolute inset-0 bg-brand-red/10 border-2 border-brand-red/30 flex items-center justify-center backface-hidden rounded-xl">
-                                <span class="text-9xl font-bold text-brand-cream">O</span>
-                                <div class="absolute bottom-6 text-sm text-brand-red uppercase tracking-[0.2em]">Omicron</div>
-                            </div>
-                            <div class="absolute inset-0 bg-brand-red text-brand-cream p-8 flex flex-col items-center justify-center text-center backface-hidden rotate-y-180 rounded-xl shadow-2xl border-2 border-brand-cream/20">
-                                <div class="text-4xl mb-4 opacity-50"><i class="fas fa-skull"></i></div>
-                                <h3 class="text-3xl font-bold mb-4">The Ogre</h3>
-                                <p class="text-lg leading-relaxed font-light">A legendary monster usually depicted as a large, hideous man-like being.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Letter P -->
-                    <div class="group h-96 perspective-1000">
-                        <div class="relative w-full h-full transition-transform duration-300 transform-style-3d group-hover:rotate-y-180">
-                            <div class="absolute inset-0 bg-brand-red/10 border-2 border-brand-red/30 flex items-center justify-center backface-hidden rounded-xl">
-                                <span class="text-9xl font-bold text-brand-cream">P</span>
-                                <div class="absolute bottom-6 text-sm text-brand-red uppercase tracking-[0.2em]">Pi</div>
-                            </div>
-                            <div class="absolute inset-0 bg-brand-red text-brand-cream p-8 flex flex-col items-center justify-center text-center backface-hidden rotate-y-180 rounded-xl shadow-2xl border-2 border-brand-cream/20">
-                                <div class="text-4xl mb-4 opacity-50"><i class="fas fa-fire"></i></div>
-                                <h3 class="text-3xl font-bold mb-4">The Phoenix</h3>
-                                <p class="text-lg leading-relaxed font-light">A long-lived bird that cyclically regenerates or is otherwise born again.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Letter Q -->
-                    <div class="group h-96 perspective-1000">
-                        <div class="relative w-full h-full transition-transform duration-300 transform-style-3d group-hover:rotate-y-180">
-                            <div class="absolute inset-0 bg-brand-red/10 border-2 border-brand-red/30 flex items-center justify-center backface-hidden rounded-xl">
-                                <span class="text-9xl font-bold text-brand-cream">Q</span>
-                                <div class="absolute bottom-6 text-sm text-brand-red uppercase tracking-[0.2em]">Qoppa</div>
-                            </div>
-                            <div class="absolute inset-0 bg-brand-red text-brand-cream p-8 flex flex-col items-center justify-center text-center backface-hidden rotate-y-180 rounded-xl shadow-2xl border-2 border-brand-cream/20">
-                                <div class="text-4xl mb-4 opacity-50"><i class="fas fa-feather-alt"></i></div>
-                                <h3 class="text-3xl font-bold mb-4">Quetzalcoatl</h3>
-                                <p class="text-lg leading-relaxed font-light">The Feathered Serpent, a prominent supernatural entity in Aztec religion.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Letter R -->
-                    <div class="group h-96 perspective-1000">
-                        <div class="relative w-full h-full transition-transform duration-300 transform-style-3d group-hover:rotate-y-180">
-                            <div class="absolute inset-0 bg-brand-red/10 border-2 border-brand-red/30 flex items-center justify-center backface-hidden rounded-xl">
-                                <span class="text-9xl font-bold text-brand-cream">R</span>
-                                <div class="absolute bottom-6 text-sm text-brand-red uppercase tracking-[0.2em]">Rho</div>
-                            </div>
-                            <div class="absolute inset-0 bg-brand-red text-brand-cream p-8 flex flex-col items-center justify-center text-center backface-hidden rotate-y-180 rounded-xl shadow-2xl border-2 border-brand-cream/20">
-                                <div class="text-4xl mb-4 opacity-50"><i class="fas fa-crow"></i></div>
-                                <h3 class="text-3xl font-bold mb-4">The Roc</h3>
-                                <p class="text-lg leading-relaxed font-light">An enormous legendary bird of prey in the popular mythology of the Middle East.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Letter S -->
-                    <div class="group h-96 perspective-1000">
-                        <div class="relative w-full h-full transition-transform duration-300 transform-style-3d group-hover:rotate-y-180">
-                            <div class="absolute inset-0 bg-brand-red/10 border-2 border-brand-red/30 flex items-center justify-center backface-hidden rounded-xl">
-                                <span class="text-9xl font-bold text-brand-cream">S</span>
-                                <div class="absolute bottom-6 text-sm text-brand-red uppercase tracking-[0.2em]">Sigma</div>
-                            </div>
-                            <div class="absolute inset-0 bg-brand-red text-brand-cream p-8 flex flex-col items-center justify-center text-center backface-hidden rotate-y-180 rounded-xl shadow-2xl border-2 border-brand-cream/20">
-                                <div class="text-4xl mb-4 opacity-50"><i class="fas fa-music"></i></div>
-                                <h3 class="text-3xl font-bold mb-4">The Siren</h3>
-                                <p class="text-lg leading-relaxed font-light">Dangerous creatures who lured nearby sailors with their enchanting music.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Letter T -->
-                    <div class="group h-96 perspective-1000">
-                        <div class="relative w-full h-full transition-transform duration-300 transform-style-3d group-hover:rotate-y-180">
-                            <div class="absolute inset-0 bg-brand-red/10 border-2 border-brand-red/30 flex items-center justify-center backface-hidden rounded-xl">
-                                <span class="text-9xl font-bold text-brand-cream">T</span>
-                                <div class="absolute bottom-6 text-sm text-brand-red uppercase tracking-[0.2em]">Tau</div>
-                            </div>
-                            <div class="absolute inset-0 bg-brand-red text-brand-cream p-8 flex flex-col items-center justify-center text-center backface-hidden rotate-y-180 rounded-xl shadow-2xl border-2 border-brand-cream/20">
-                                <div class="text-4xl mb-4 opacity-50"><i class="fas fa-mountain"></i></div>
-                                <h3 class="text-3xl font-bold mb-4">The Troll</h3>
-                                <p class="text-lg leading-relaxed font-light">A class of being in Norse mythology and Scandinavian folklore.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Letter U -->
-                    <div class="group h-96 perspective-1000">
-                        <div class="relative w-full h-full transition-transform duration-300 transform-style-3d group-hover:rotate-y-180">
-                            <div class="absolute inset-0 bg-brand-red/10 border-2 border-brand-red/30 flex items-center justify-center backface-hidden rounded-xl">
-                                <span class="text-9xl font-bold text-brand-cream">U</span>
-                                <div class="absolute bottom-6 text-sm text-brand-red uppercase tracking-[0.2em]">Upsilon</div>
-                            </div>
-                            <div class="absolute inset-0 bg-brand-red text-brand-cream p-8 flex flex-col items-center justify-center text-center backface-hidden rotate-y-180 rounded-xl shadow-2xl border-2 border-brand-cream/20">
-                                <div class="text-4xl mb-4 opacity-50"><i class="fas fa-horse"></i></div>
-                                <h3 class="text-3xl font-bold mb-4">The Unicorn</h3>
-                                <p class="text-lg leading-relaxed font-light">A legendary creature that has been described since antiquity as a beast with a single horn.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Letter V -->
-                    <div class="group h-96 perspective-1000">
-                        <div class="relative w-full h-full transition-transform duration-300 transform-style-3d group-hover:rotate-y-180">
-                            <div class="absolute inset-0 bg-brand-red/10 border-2 border-brand-red/30 flex items-center justify-center backface-hidden rounded-xl">
-                                <span class="text-9xl font-bold text-brand-cream">V</span>
-                                <div class="absolute bottom-6 text-sm text-brand-red uppercase tracking-[0.2em]">Victor</div>
-                            </div>
-                            <div class="absolute inset-0 bg-brand-red text-brand-cream p-8 flex flex-col items-center justify-center text-center backface-hidden rotate-y-180 rounded-xl shadow-2xl border-2 border-brand-cream/20">
-                                <div class="text-4xl mb-4 opacity-50"><i class="fas fa-bat"></i></div>
-                                <h3 class="text-3xl font-bold mb-4">The Vampire</h3>
-                                <p class="text-lg leading-relaxed font-light">A creature from folklore that subsists by feeding on the vital essence of the living.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Letter W -->
-                    <div class="group h-96 perspective-1000">
-                        <div class="relative w-full h-full transition-transform duration-300 transform-style-3d group-hover:rotate-y-180">
-                            <div class="absolute inset-0 bg-brand-red/10 border-2 border-brand-red/30 flex items-center justify-center backface-hidden rounded-xl">
-                                <span class="text-9xl font-bold text-brand-cream">W</span>
-                                <div class="absolute bottom-6 text-sm text-brand-red uppercase tracking-[0.2em]">Whiskey</div>
-                            </div>
-                            <div class="absolute inset-0 bg-brand-red text-brand-cream p-8 flex flex-col items-center justify-center text-center backface-hidden rotate-y-180 rounded-xl shadow-2xl border-2 border-brand-cream/20">
-                                <div class="text-4xl mb-4 opacity-50"><i class="fas fa-dragon"></i></div>
-                                <h3 class="text-3xl font-bold mb-4">The Wyvern</h3>
-                                <p class="text-lg leading-relaxed font-light">A legendary winged creature with a dragon's head and reptilian body.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Letter X -->
-                    <div class="group h-96 perspective-1000">
-                        <div class="relative w-full h-full transition-transform duration-300 transform-style-3d group-hover:rotate-y-180">
-                            <div class="absolute inset-0 bg-brand-red/10 border-2 border-brand-red/30 flex items-center justify-center backface-hidden rounded-xl">
-                                <span class="text-9xl font-bold text-brand-cream">X</span>
-                                <div class="absolute bottom-6 text-sm text-brand-red uppercase tracking-[0.2em]">Chi</div>
-                            </div>
-                            <div class="absolute inset-0 bg-brand-red text-brand-cream p-8 flex flex-col items-center justify-center text-center backface-hidden rotate-y-180 rounded-xl shadow-2xl border-2 border-brand-cream/20">
-                                <div class="text-4xl mb-4 opacity-50"><i class="fas fa-water"></i></div>
-                                <h3 class="text-3xl font-bold mb-4">The Xana</h3>
-                                <p class="text-lg leading-relaxed font-light">A character found in Asturian mythology, a fairy who lives in fountains.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Letter Y -->
-                    <div class="group h-96 perspective-1000">
-                        <div class="relative w-full h-full transition-transform duration-300 transform-style-3d group-hover:rotate-y-180">
-                            <div class="absolute inset-0 bg-brand-red/10 border-2 border-brand-red/30 flex items-center justify-center backface-hidden rounded-xl">
-                                <span class="text-9xl font-bold text-brand-cream">Y</span>
-                                <div class="absolute bottom-6 text-sm text-brand-red uppercase tracking-[0.2em]">Yankee</div>
-                            </div>
-                            <div class="absolute inset-0 bg-brand-red text-brand-cream p-8 flex flex-col items-center justify-center text-center backface-hidden rotate-y-180 rounded-xl shadow-2xl border-2 border-brand-cream/20">
-                                <div class="text-4xl mb-4 opacity-50"><i class="fas fa-snowflake"></i></div>
-                                <h3 class="text-3xl font-bold mb-4">The Yeti</h3>
-                                <p class="text-lg leading-relaxed font-light">An ape-like entity said to inhabit the Himalayan mountain range.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Letter Z -->
-                    <div class="group h-96 perspective-1000">
-                        <div class="relative w-full h-full transition-transform duration-300 transform-style-3d group-hover:rotate-y-180">
-                            <div class="absolute inset-0 bg-brand-red/10 border-2 border-brand-red/30 flex items-center justify-center backface-hidden rounded-xl">
-                                <span class="text-9xl font-bold text-brand-cream">Z</span>
-                                <div class="absolute bottom-6 text-sm text-brand-red uppercase tracking-[0.2em]">Zeta</div>
-                            </div>
-                            <div class="absolute inset-0 bg-brand-red text-brand-cream p-8 flex flex-col items-center justify-center text-center backface-hidden rotate-y-180 rounded-xl shadow-2xl border-2 border-brand-cream/20">
-                                <div class="text-4xl mb-4 opacity-50"><i class="fas fa-wind"></i></div>
-                                <h3 class="text-3xl font-bold mb-4">The Zephyr</h3>
-                                <p class="text-lg leading-relaxed font-light">The Greek god of the west wind, the gentlest of the winds.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- NUMBERS & SYMBOLS -->
-                    <!-- 0 -->
-                    <div class="group h-96 perspective-1000">
-                        <div class="relative w-full h-full transition-transform duration-300 transform-style-3d group-hover:rotate-y-180">
-                            <div class="absolute inset-0 bg-brand-red/10 border-2 border-brand-red/30 flex items-center justify-center backface-hidden rounded-xl">
-                                <span class="text-9xl font-bold text-brand-cream">0</span>
-                                <div class="absolute bottom-6 text-sm text-brand-red uppercase tracking-[0.2em]">Zero</div>
-                            </div>
-                            <div class="absolute inset-0 bg-brand-red text-brand-cream p-8 flex flex-col items-center justify-center text-center backface-hidden rotate-y-180 rounded-xl shadow-2xl border-2 border-brand-cream/20">
-                                <h3 class="text-3xl font-bold mb-4">The Void</h3>
-                                <p class="text-lg leading-relaxed font-light">The beginning and the end.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- 1 -->
-                    <div class="group h-96 perspective-1000">
-                        <div class="relative w-full h-full transition-transform duration-300 transform-style-3d group-hover:rotate-y-180">
-                            <div class="absolute inset-0 bg-brand-red/10 border-2 border-brand-red/30 flex items-center justify-center backface-hidden rounded-xl">
-                                <span class="text-9xl font-bold text-brand-cream">1</span>
-                                <div class="absolute bottom-6 text-sm text-brand-red uppercase tracking-[0.2em]">One</div>
-                            </div>
-                            <div class="absolute inset-0 bg-brand-red text-brand-cream p-8 flex flex-col items-center justify-center text-center backface-hidden rotate-y-180 rounded-xl shadow-2xl border-2 border-brand-cream/20">
-                                <h3 class="text-3xl font-bold mb-4">The Monolith</h3>
-                                <p class="text-lg leading-relaxed font-light">Standing alone.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- 2 -->
-                    <div class="group h-96 perspective-1000">
-                        <div class="relative w-full h-full transition-transform duration-300 transform-style-3d group-hover:rotate-y-180">
-                            <div class="absolute inset-0 bg-brand-red/10 border-2 border-brand-red/30 flex items-center justify-center backface-hidden rounded-xl">
-                                <span class="text-9xl font-bold text-brand-cream">2</span>
-                                <div class="absolute bottom-6 text-sm text-brand-red uppercase tracking-[0.2em]">Two</div>
-                            </div>
-                            <div class="absolute inset-0 bg-brand-red text-brand-cream p-8 flex flex-col items-center justify-center text-center backface-hidden rotate-y-180 rounded-xl shadow-2xl border-2 border-brand-cream/20">
-                                <h3 class="text-3xl font-bold mb-4">The Twins</h3>
-                                <p class="text-lg leading-relaxed font-light">Duality and balance.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- 3 -->
-                    <div class="group h-96 perspective-1000">
-                        <div class="relative w-full h-full transition-transform duration-300 transform-style-3d group-hover:rotate-y-180">
-                            <div class="absolute inset-0 bg-brand-red/10 border-2 border-brand-red/30 flex items-center justify-center backface-hidden rounded-xl">
-                                <span class="text-9xl font-bold text-brand-cream">3</span>
-                                <div class="absolute bottom-6 text-sm text-brand-red uppercase tracking-[0.2em]">Three</div>
-                            </div>
-                            <div class="absolute inset-0 bg-brand-red text-brand-cream p-8 flex flex-col items-center justify-center text-center backface-hidden rotate-y-180 rounded-xl shadow-2xl border-2 border-brand-cream/20">
-                                <h3 class="text-3xl font-bold mb-4">The Trinity</h3>
-                                <p class="text-lg leading-relaxed font-light">Past, Present, Future.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- 4 -->
-                    <div class="group h-96 perspective-1000">
-                        <div class="relative w-full h-full transition-transform duration-300 transform-style-3d group-hover:rotate-y-180">
-                            <div class="absolute inset-0 bg-brand-red/10 border-2 border-brand-red/30 flex items-center justify-center backface-hidden rounded-xl">
-                                <span class="text-9xl font-bold text-brand-cream">4</span>
-                                <div class="absolute bottom-6 text-sm text-brand-red uppercase tracking-[0.2em]">Four</div>
-                            </div>
-                            <div class="absolute inset-0 bg-brand-red text-brand-cream p-8 flex flex-col items-center justify-center text-center backface-hidden rotate-y-180 rounded-xl shadow-2xl border-2 border-brand-cream/20">
-                                <h3 class="text-3xl font-bold mb-4">The Elements</h3>
-                                <p class="text-lg leading-relaxed font-light">Earth, Air, Fire, Water.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- 5 -->
-                    <div class="group h-96 perspective-1000">
-                        <div class="relative w-full h-full transition-transform duration-300 transform-style-3d group-hover:rotate-y-180">
-                            <div class="absolute inset-0 bg-brand-red/10 border-2 border-brand-red/30 flex items-center justify-center backface-hidden rounded-xl">
-                                <span class="text-9xl font-bold text-brand-cream">5</span>
-                                <div class="absolute bottom-6 text-sm text-brand-red uppercase tracking-[0.2em]">Five</div>
-                            </div>
-                            <div class="absolute inset-0 bg-brand-red text-brand-cream p-8 flex flex-col items-center justify-center text-center backface-hidden rotate-y-180 rounded-xl shadow-2xl border-2 border-brand-cream/20">
-                                <h3 class="text-3xl font-bold mb-4">The Pentacle</h3>
-                                <p class="text-lg leading-relaxed font-light">Spirit and the four elements.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- 6 -->
-                    <div class="group h-96 perspective-1000">
-                        <div class="relative w-full h-full transition-transform duration-300 transform-style-3d group-hover:rotate-y-180">
-                            <div class="absolute inset-0 bg-brand-red/10 border-2 border-brand-red/30 flex items-center justify-center backface-hidden rounded-xl">
-                                <span class="text-9xl font-bold text-brand-cream">6</span>
-                                <div class="absolute bottom-6 text-sm text-brand-red uppercase tracking-[0.2em]">Six</div>
-                            </div>
-                            <div class="absolute inset-0 bg-brand-red text-brand-cream p-8 flex flex-col items-center justify-center text-center backface-hidden rotate-y-180 rounded-xl shadow-2xl border-2 border-brand-cream/20">
-                                <h3 class="text-3xl font-bold mb-4">The Hex</h3>
-                                <p class="text-lg leading-relaxed font-light">Structure and harmony.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- 7 -->
-                    <div class="group h-96 perspective-1000">
-                        <div class="relative w-full h-full transition-transform duration-300 transform-style-3d group-hover:rotate-y-180">
-                            <div class="absolute inset-0 bg-brand-red/10 border-2 border-brand-red/30 flex items-center justify-center backface-hidden rounded-xl">
-                                <span class="text-9xl font-bold text-brand-cream">7</span>
-                                <div class="absolute bottom-6 text-sm text-brand-red uppercase tracking-[0.2em]">Seven</div>
-                            </div>
-                            <div class="absolute inset-0 bg-brand-red text-brand-cream p-8 flex flex-col items-center justify-center text-center backface-hidden rotate-y-180 rounded-xl shadow-2xl border-2 border-brand-cream/20">
-                                <h3 class="text-3xl font-bold mb-4">The Mystic</h3>
-                                <p class="text-lg leading-relaxed font-light">The number of perfection.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- 8 -->
-                    <div class="group h-96 perspective-1000">
-                        <div class="relative w-full h-full transition-transform duration-300 transform-style-3d group-hover:rotate-y-180">
-                            <div class="absolute inset-0 bg-brand-red/10 border-2 border-brand-red/30 flex items-center justify-center backface-hidden rounded-xl">
-                                <span class="text-9xl font-bold text-brand-cream">8</span>
-                                <div class="absolute bottom-6 text-sm text-brand-red uppercase tracking-[0.2em]">Eight</div>
-                            </div>
-                            <div class="absolute inset-0 bg-brand-red text-brand-cream p-8 flex flex-col items-center justify-center text-center backface-hidden rotate-y-180 rounded-xl shadow-2xl border-2 border-brand-cream/20">
-                                <h3 class="text-3xl font-bold mb-4">Infinity</h3>
-                                <p class="text-lg leading-relaxed font-light">The loop that never ends.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- 9 -->
-                    <div class="group h-96 perspective-1000">
-                        <div class="relative w-full h-full transition-transform duration-300 transform-style-3d group-hover:rotate-y-180">
-                            <div class="absolute inset-0 bg-brand-red/10 border-2 border-brand-red/30 flex items-center justify-center backface-hidden rounded-xl">
-                                <span class="text-9xl font-bold text-brand-cream">9</span>
-                                <div class="absolute bottom-6 text-sm text-brand-red uppercase tracking-[0.2em]">Nine</div>
-                            </div>
-                            <div class="absolute inset-0 bg-brand-red text-brand-cream p-8 flex flex-col items-center justify-center text-center backface-hidden rotate-y-180 rounded-xl shadow-2xl border-2 border-brand-cream/20">
-                                <h3 class="text-3xl font-bold mb-4">The End</h3>
-                                <p class="text-lg leading-relaxed font-light">Completion of the cycle.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- SYMBOLS -->
-                    <!-- ! -->
-                    <div class="group h-96 perspective-1000">
-                        <div class="relative w-full h-full transition-transform duration-300 transform-style-3d group-hover:rotate-y-180">
-                            <div class="absolute inset-0 bg-brand-red/10 border-2 border-brand-red/30 flex items-center justify-center backface-hidden rounded-xl">
-                                <span class="text-9xl font-bold text-brand-cream">!</span>
-                                <div class="absolute bottom-6 text-sm text-brand-red uppercase tracking-[0.2em]">Exclamation</div>
-                            </div>
-                            <div class="absolute inset-0 bg-brand-red text-brand-cream p-8 flex flex-col items-center justify-center text-center backface-hidden rotate-y-180 rounded-xl shadow-2xl border-2 border-brand-cream/20">
-                                <h3 class="text-3xl font-bold mb-4">The Shout</h3>
-                                <p class="text-lg leading-relaxed font-light">A cry of alarm or joy.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- ? -->
-                    <div class="group h-96 perspective-1000">
-                        <div class="relative w-full h-full transition-transform duration-300 transform-style-3d group-hover:rotate-y-180">
-                            <div class="absolute inset-0 bg-brand-red/10 border-2 border-brand-red/30 flex items-center justify-center backface-hidden rounded-xl">
-                                <span class="text-9xl font-bold text-brand-cream">?</span>
-                                <div class="absolute bottom-6 text-sm text-brand-red uppercase tracking-[0.2em]">Question</div>
-                            </div>
-                            <div class="absolute inset-0 bg-brand-red text-brand-cream p-8 flex flex-col items-center justify-center text-center backface-hidden rotate-y-180 rounded-xl shadow-2xl border-2 border-brand-cream/20">
-                                <h3 class="text-3xl font-bold mb-4">The Enigma</h3>
-                                <p class="text-lg leading-relaxed font-light">The unknown awaiting an answer.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- & -->
-                    <div class="group h-96 perspective-1000">
-                        <div class="relative w-full h-full transition-transform duration-300 transform-style-3d group-hover:rotate-y-180">
-                            <div class="absolute inset-0 bg-brand-red/10 border-2 border-brand-red/30 flex items-center justify-center backface-hidden rounded-xl">
-                                <span class="text-9xl font-bold text-brand-cream">&</span>
-                                <div class="absolute bottom-6 text-sm text-brand-red uppercase tracking-[0.2em]">Ampersand</div>
-                            </div>
-                            <div class="absolute inset-0 bg-brand-red text-brand-cream p-8 flex flex-col items-center justify-center text-center backface-hidden rotate-y-180 rounded-xl shadow-2xl border-2 border-brand-cream/20">
-                                <h3 class="text-3xl font-bold mb-4">The Bond</h3>
-                                <p class="text-lg leading-relaxed font-light">Connecting one to another.</p>
-                            </div>
-                        </div>
+                    
+                    <div class="text-center mt-32">
+                         <p class="text-brand-blue/50 text-sm italic">...more specimens in the archive.</p>
                     </div>
                 </div>
-                
-                <div class="text-center mt-12">
-                     <p class="text-brand-cream/50 text-sm">Explore the full character set.</p>
-                </div>
-            </div>
-        </section>
+            </section>
 
-        <!-- OUTPUT SECTION (Gallery) -->
-        <section class="py-24 bg-white">
-            <div class="max-w-7xl mx-auto px-4">
-                <div class="text-center mb-16">
-                    <h2 class="text-6xl font-bold text-brand-red mb-4">Output</h2>
-                    <div class="text-brand-red text-2xl"><i class="fas fa-crown"></i></div>
-                </div>
-
-                <!-- Masonry-style Grid Placeholder -->
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                    <!-- Item 1 -->
-                    <div class="bg-brand-cream p-4 shadow-lg transform rotate-1 hover:rotate-0 transition-transform duration-300">
-                        <div class="aspect-[3/4] bg-brand-dark flex items-center justify-center text-brand-cream">
-                            <span class="text-4xl font-bold">Poster 1</span>
-                        </div>
-                    </div>
-                    <!-- Item 2 -->
-                    <div class="bg-brand-cream p-4 shadow-lg transform -rotate-1 hover:rotate-0 transition-transform duration-300 md:mt-12">
-                        <div class="aspect-[3/4] bg-brand-red/10 flex items-center justify-center text-brand-dark">
-                            <span class="text-4xl font-bold">Book Page</span>
-                        </div>
-                    </div>
-                    <!-- Item 3 -->
-                    <div class="bg-brand-cream p-4 shadow-lg transform rotate-2 hover:rotate-0 transition-transform duration-300">
-                        <div class="aspect-[3/4] bg-brand-dark flex items-center justify-center text-brand-cream">
-                            <span class="text-4xl font-bold">Specimen</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- FOOTER -->
-        <footer class="bg-brand-dark text-brand-cream/50 py-12 border-t border-brand-red/10">
-            <div class="max-w-7xl mx-auto px-4 text-center">
-                <p class="font-mono text-sm">© 2024 Letterarium Project. All rights reserved.</p>
-            </div>
-        </footer>
-
+        </div>
     </body>
 </html>

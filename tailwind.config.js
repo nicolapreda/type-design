@@ -7,9 +7,8 @@ module.exports = {
         serif: ['Georgia', 'Cambria', 'Times New Roman', 'Times', 'serif'],
       },
       colors: {
-        'brand-dark': '#2a1a1a', // Deep Brown/Burgundy
-        'brand-red': '#a83232',  // Rust/Brick Red
-        'brand-cream': '#f5f3ee', // Light Cream
+        'brand-cream': '#F9E6C8', // Light Cream
+        'brand-blue': '#1a237e',  // Deep Blue
       },
     },
   },
