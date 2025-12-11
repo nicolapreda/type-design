@@ -5,6 +5,7 @@ module.exports = {
       fontFamily: {
         sans: ['-apple-system', 'BlinkMacSystemFont', 'SF Pro Display', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'sans-serif'],
         serif: ['Georgia', 'Cambria', 'Times New Roman', 'Times', 'serif'],
+        'brand-custom': ['GlyfariumDef', 'serif'],
       },
       colors: {
         'brand-cream': '#F9E6C8', // Light Cream
