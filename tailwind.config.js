@@ -8,8 +8,8 @@ module.exports = {
         'brand-custom': ['GlyfariumDef', 'serif'],
       },
       colors: {
-        'brand-cream': '#F9E6C8', // Light Cream
-        'brand-blue': '#1a237e',  // Deep Blue
+        'brand-cream': '#f0f0f0', // Light Grey/Off-White
+        'brand-blue': '#28376d',  // Deep Navy Blue
       },
     },
   },

@@ -4,7 +4,7 @@
 
 @font-face {
     font-family: 'GlyfariumDef';
-    src: url('../public/assets/font_def.otf') format('opentype');
+    src: url('/assets/font_def.otf');
     font-weight: normal;
     font-style: normal;
 }

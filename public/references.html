@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="it" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Glyfarium | Type Design</title>
+    <meta name="description" content="The Glyfarium - A type design project." />
+
+    <!-- CSS -->
+    <link href="./assets/style.css" rel="stylesheet" />
+    <link rel="icon" href="./assets/favicon.png" type="image/x-icon" />
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+</head>
+
+<body
+    class="bg-brand-cream text-brand-blue font-serif antialiased selection:bg-brand-blue selection:text-brand-cream overflow-x-hidden">
+
+    <!-- Main Container with Consistent Width -->
+    <div class="w-full max-w-[85%] mx-auto relative bg-brand-cream min-h-screen my-8">
+
+        <!-- HERO SECTION -->
+        <header class="relative pt-16 pb-16 px-4 text-center">
+            <div class="w-full mx-auto relative z-10 border-b border-brand-blue/30 pb-12">
+                <h2 class="text-3xl md:text-5xl uppercase tracking-widest font-bold mb-6">To The People</h2>
+
+                <!-- Top Decoration -->
+                <div class="flex items-center justify-center gap-2 mb-8 opacity-80 w-full">
+                    <img src="./assets/grazia_1.png" class="h-8 md:h-12 w-auto transform scale-x-[-1]" alt="" />
+                    <div class="h-px bg-brand-blue w-full"></div>
+                    <img src="./assets/grazia_1.png" class="h-8 md:h-12 w-auto" alt="" />
+                </div>
+
+                <p class="text-2xl italic mb-8">We present</p>
+
+                <p class="text-sm uppercase tracking-[0.3em] mb-2">The</p>
+                <!-- Huge Title -->
+                <h1 class="text-[12vw] leading-none font-bold tracking-tighter mb-12 scale-y-110">
+                    Glyfarium
+                </h1>
+
+                <!-- Capital Illustration -->
+                <div class="relative w-full max-w-4xl mx-auto mb-16">
+                    <img src="./assets/colonna 1.png" alt="Architectural Capital"
+                        class="w-full h-auto drop-shadow-xl" />
+                </div>
+
+                <!-- Navigation Buttons -->
+                <a href="index.html"
+                    class="relative group inline-flex items-center justify-center w-64 h-24 transition-transform hover:scale-105">
+                    <img src="./assets/cornice_bottoni.png" class="absolute inset-0 w-full h-full object-fill" alt="" />
+                    <span class="relative z-10 text-xl font-bold uppercase tracking-widest pt-1">Home</span>
+                </a>
+                <a href="references.html"
+                    class="relative group inline-flex items-center justify-center w-64 h-24 transition-transform hover:scale-105">
+                    <img src="./assets/cornice_bottoni.png" class="absolute inset-0 w-full h-full object-fill" alt="" />
+                    <span class="relative z-10 text-xl font-bold uppercase tracking-widest pt-1">References</span>
+                </a>
+                <a href="archive.html"
+                    class="relative group inline-flex items-center justify-center w-64 h-24 transition-transform hover:scale-105">
+                    <img src="./assets/cornice_bottoni.png" class="absolute inset-0 w-full h-full object-fill" alt="" />
+                    <span class="relative z-10 text-xl font-bold uppercase tracking-widest pt-1">Archive</span>
+                </a>
+                <a href="story.html"
+                    class="relative group inline-flex items-center justify-center w-64 h-24 transition-transform hover:scale-105">
+                    <img src="./assets/cornice_bottoni.png" class="absolute inset-0 w-full h-full object-fill" alt="" />
+                    <span class="relative z-10 text-xl font-bold uppercase tracking-widest pt-1">Story</span>
+                </a>
+            </div>
+        </header>
+
+        <!-- REFERENCES SECTION -->
+        <section id="references"
+            class="py-16 px-8 md:px-16 w-full mx-auto text-center min-h-[50vh] flex flex-col items-center justify-center">
+
+            <h2 class="text-4xl md:text-5xl font-brand-custom mb-8 text-brand-blue">References & Moodboard</h2>
+
+            <p class="text-xl italic text-brand-blue/70 mb-12 max-w-2xl mx-auto">
+                Una raccolta di immagini e ispirazioni che hanno guidato la creazione del Glyfarium.
+                Dai bestiari medievali alle lettere miniate, ogni dettaglio racconta una storia.
+            </p>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 w-full max-w-6xl">
+                <!-- Placeholders for images -->
+                <div
+                    class="aspect-[4/5] bg-brand-blue/5 border border-brand-blue/20 flex items-center justify-center relative p-4 group">
+                    <div class="absolute inset-2 border border-brand-blue/10"></div>
+                    <span class="font-brand-custom text-4xl text-brand-blue/30">Ref. 1</span>
+                </div>
+                <div
+                    class="aspect-[4/5] bg-brand-blue/5 border border-brand-blue/20 flex items-center justify-center relative p-4 group">
+                    <div class="absolute inset-2 border border-brand-blue/10"></div>
+                    <span class="font-brand-custom text-4xl text-brand-blue/30">Ref. 2</span>
+                </div>
+                <div
+                    class="aspect-[4/5] bg-brand-blue/5 border border-brand-blue/20 flex items-center justify-center relative p-4 group">
+                    <div class="absolute inset-2 border border-brand-blue/10"></div>
+                    <span class="font-brand-custom text-4xl text-brand-blue/30">Ref. 3</span>
+                </div>
+            </div>
+
+        </section>
+
+        <divider class="relative mt-32 pb-24 px-4">
+            <div class="max-w-5xl mx-auto">
+                <img src="./assets/footer.png" class="w-full h-auto object-contain" alt="Footer Decoration" />
+            </div>
+        </divider>
+
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
