@@ -53,17 +53,59 @@ document.addEventListener('DOMContentLoaded', () => {
     const modalCharDisplay = document.getElementById('modal-char-display');
     const modalCharTitle = document.getElementById('modal-char-title');
     const modalCharDesc = document.getElementById('modal-char-desc');
+    const modalCharLongDesc = document.getElementById('modal-char-long-desc');
+    const modalRefImage = document.getElementById('modal-ref-image');
     const readMoreBtns = document.querySelectorAll('.read-more-btn');
 
     // Modal Functionality
     if (modal) {
-        function openModal(char, desc) {
+        function openModal(char, subtitle, longDesc, refImage) {
             if (!modalCharDisplay || !modalCharTitle || !modalCharDesc) return;
             
             modalCharDisplay.textContent = char;
             modalCharTitle.textContent = char;
-            // Keep the original short description or use a placeholder if empty
-            modalCharDesc.textContent = desc || "The definitive form.";
+            
+            if (subtitle) {
+                // Formatting for cards with H4 (Animal Name)
+                modalCharDesc.textContent = subtitle;
+                modalCharDesc.classList.add('uppercase', 'font-bold', 'not-italic'); // Make title stand out
+                modalCharDesc.classList.remove('italic');
+                
+                if (modalCharLongDesc) {
+                    modalCharLongDesc.textContent = longDesc;
+                    modalCharLongDesc.style.display = 'block';
+                }
+            } else {
+                // Formatting for legacy cards
+                modalCharDesc.textContent = longDesc || "The definitive form.";
+                modalCharDesc.classList.add('italic');
+                modalCharDesc.classList.remove('uppercase', 'font-bold', 'not-italic');
+                
+                if (modalCharLongDesc) {
+                    modalCharLongDesc.textContent = "";
+                    modalCharLongDesc.style.display = 'none';
+                }
+            }
+
+            // Reference Image Handling
+            const modalLeftImage = document.getElementById('modal-left-image');
+            
+            if (modalLeftImage) {
+                if (refImage) {
+                    modalLeftImage.src = refImage;
+                    modalLeftImage.classList.remove('hidden');
+                    if (modalCharDisplay) modalCharDisplay.classList.add('hidden');
+                } else {
+                    modalLeftImage.classList.add('hidden');
+                    modalLeftImage.src = '';
+                    if (modalCharDisplay) modalCharDisplay.classList.remove('hidden');
+                }
+            }
+
+            // Legacy right-side image handling (optional cleanup, hiding it for now as per request to "put it in place of")
+            if (modalRefImage) {
+               modalRefImage.classList.add('hidden');
+            }
             
             modal.classList.remove('hidden');
             // Small delay to allow display:block to apply before opacity transition
@@ -95,9 +137,17 @@ document.addEventListener('DOMContentLoaded', () => {
                 e.stopPropagation(); 
                 const cardBack = btn.closest('.backface-hidden'); 
                 const charTitle = cardBack.querySelector('h3').textContent;
+                
+                const charSubtitleEl = cardBack.querySelector('h4');
+                const charSubtitle = charSubtitleEl ? charSubtitleEl.textContent : null;
+                
                 const charDesc = cardBack.querySelector('p').textContent;
 
-                openModal(charTitle, charDesc);
+                // Find the closest group container to get the data attribute
+                const cardGroup = btn.closest('.group');
+                const refImage = cardGroup ? cardGroup.getAttribute('data-ref-image') : null;
+
+                openModal(charTitle, charSubtitle, charDesc, refImage);
             });
         });
 
