@@ -1,206 +1,259 @@
 <!DOCTYPE html>
-<html lang="it" class="scroll-smooth">
+<html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>The Glyfarium | Type Design</title>
-    <meta name="description" content="The Glyfarium - A type design project." />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Story - Glyfarium</title>
+    <link href="./assets/style.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            blue: '#1e3a8a',
+                            cream: '#f5f5f0',
+                            red: '#991b1b'
+                        }
+                    },
+                    fontFamily: {
+                        'brand-custom': ['GlyfariumDef', 'serif'],
+                        'serif': ['Old Standard TT', 'serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .font-brand-custom {
+            font-family: 'GlyfariumDef', serif;
+        }
 
-    <!-- CSS -->
-    <link href="./assets/style.css" rel="stylesheet" />
-    <link rel="icon" href="./assets/favicon.png" type="image/x-icon" />
+        /* 3D Transform Utilities */
+        .perspective-1000 {
+            perspective: 1000px;
+        }
 
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+        .transform-style-3d {
+            transform-style: preserve-3d;
+        }
+
+        .backface-hidden {
+            backface-visibility: hidden;
+        }
+
+        .rotate-y-180 {
+            transform: rotateY(180deg);
+        }
+    </style>
 </head>
 
 <body
     class="bg-brand-cream text-brand-blue font-serif antialiased selection:bg-brand-blue selection:text-brand-cream overflow-x-hidden">
 
-    <!-- Main Container with Consistent Width -->
-    <div class="w-full max-w-[85%] mx-auto relative bg-brand-cream min-h-screen my-8">
+    <!-- Main Container -->
+    <div
+        class="w-full max-w-[95%] mx-auto relative bg-brand-cream min-h-screen my-8 shadow-2xl overflow-hidden border border-brand-blue/10">
 
-        <!-- HERO SECTION -->
-        <header class="relative pt-16 pb-16 px-4 text-center">
-            <div class="w-full mx-auto relative z-10 border-b border-brand-blue/30 pb-12">
-                <h2 class="text-3xl md:text-5xl uppercase tracking-widest mb-6">To The People</h2>
-
-                <!-- Top Decoration -->
-                <div class="flex items-center justify-center gap-2 mb-8 opacity-80 w-full">
-                    <img src="./assets/grazia_1.png" class="h-8 md:h-12 w-auto transform scale-x-[-1]" alt="" />
-                    <div class="h-px bg-brand-blue w-full"></div>
-                    <img src="./assets/grazia_1.png" class="h-8 md:h-12 w-auto" alt="" />
-                </div>
-
-                <p class="text-2xl italic mb-8">We present</p>
-
-                <p class="text-sm uppercase tracking-[0.3em] mb-2">The</p>
-                <!-- Huge Title -->
-                <h1 class="text-[12vw] leading-none tracking-tighter mb-12 scale-y-110">
-                    Glyfarium
+        <!-- SECTION 1: GLYPHARIUM COMPOSITION -->
+        <header class="relative w-full min-h-[140vh] md:min-h-[120vh] bg-brand-cream overflow-hidden pt-20 pb-0">
+            <!-- Title -->
+            <div class="relative z-20 text-center mb-0 px-4">
+                <h1
+                    class="text-[18vw] md:text-[15vw] leading-none font-bold tracking-tighter text-brand-blue mix-blend-multiply opacity-90 scale-y-110">
+                    Glypharium
                 </h1>
+            </div>
 
-                <!-- Capital Illustration -->
-                <div class="relative w-full max-w-4xl mx-auto mb-16">
-                    <img src="./assets/colonna 1.png" alt="Architectural Capital"
-                        class="w-full h-auto drop-shadow-xl" />
+            <!-- Central Composition -->
+            <div class="relative w-full max-w-7xl mx-auto h-[600px] md:h-[900px] mt-[-5vw]">
+
+                <!-- Giraffe (Left) -->
+                <img src="./assets/archive/f.png"
+                    class="absolute left-[-10%] md:left-[10%] top-[10%] w-[50%] md:w-[30%] mix-blend-multiply z-10 transform -rotate-6 grayscale contrast-125 opacity-90"
+                    alt="Giraffe" />
+
+                <!-- Central Frame & Letter -->
+                <div class="absolute left-1/2 top-[15%] md:top-[10%] -translate-x-1/2 w-[70vw] md:w-[450px] z-10">
+                    <img src="./assets/Frame.png" class="w-full h-auto drop-shadow-2xl opacity-90 grayscale-[0.2]"
+                        alt="Frame" />
+                    <div class="absolute inset-0 flex items-center justify-center pt-8 md:pt-12">
+                        <span
+                            class="text-[10rem] md:text-[16rem] font-serif italic text-brand-blue/90 leading-none">f</span>
+                    </div>
                 </div>
 
-                <!-- Navigation Buttons -->
+                <!-- Bird (Right) -->
+                <img src="./assets/bird.png"
+                    class="absolute right-[-5%] md:right-[12%] top-[30%] md:top-[25%] w-[40%] md:w-[25%] mix-blend-multiply z-20 transform -scale-x-100 grayscale contrast-125"
+                    alt="Bird" />
+
+                <!-- Floral Bottom -->
+                <div class="absolute bottom-0 md:-bottom-24 left-0 w-full z-20 pointer-events-none">
+                    <img src="./assets/jungle.png" class="w-full h-auto mix-blend-multiply opacity-80"
+                        alt="Floral Decoration" />
+                </div>
+            </div>
+
+            <!-- Text Columns (Overlapping Bottom) -->
+            <div
+                class="relative z-30 max-w-7xl mx-auto px-8 grid md:grid-cols-3 gap-12 text-brand-blue text-lg md:text-xl leading-relaxed mt-[-100px] md:mt-[-250px] pb-32">
+                <div
+                    class="md:col-span-1 bg-brand-cream/80 backdrop-blur-sm p-6 rounded-lg shadow-sm border border-brand-blue/5">
+                    <p>
+                        <span
+                            class="float-left text-8xl font-bold font-brand-custom mr-4 mt-[-10px] text-brand-blue leading-[0.8]">N</span>ei
+                        bestiari antichi, gli animali venivano spesso disegnati in modo impreciso: creature mai viste,
+                        descritte per sentito dire, nate dall’immaginazione più che dall’osservazione.
+                    </p>
+                </div>
+                <div
+                    class="md:col-span-1 bg-brand-cream/80 backdrop-blur-sm p-6 rounded-lg shadow-sm border border-brand-blue/5">
+                    <p class="mb-4">
+                        Quelle figure "sbagliate" erano però piene di vita, sospese tra realtà e mito e raccontavano lo
+                        scorrere del tempo e l’evoluzione di interi popoli e culture.
+                    </p>
+                    <p>
+                        Questo progetto vuole interpretare l'errore come forma creativa: lettere che trovano armonia
+                        nelle loro imperfezioni.
+                    </p>
+                </div>
+                <div
+                    class="md:col-span-1 bg-brand-cream/80 backdrop-blur-sm p-6 rounded-lg shadow-sm border border-brand-blue/5">
+                    <p class="mb-4">
+                        Ogni lettera possiede un’anima, la cui forma segreta richiama inaspettatamente un animale reale.
+                    </p>
+                    <p>
+                        Così, come i bestiari di un tempo, non vogliamo imitare la realtà, ma reinventarla, mostrando
+                        che la forma delle lettere nasconde in realtà una propria vita.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Navigation Buttons (Integrated) -->
+            <div class="flex flex-wrap justify-center gap-4 md:gap-16 relative z-40 pb-24">
                 <a href="index.html"
-                    class="relative group inline-flex items-center justify-center w-64 h-24 transition-transform hover:scale-105">
-                    <img src="./assets/cornice_bottoni.png" class="absolute inset-0 w-full h-full object-fill" alt="" />
-                    <span class="relative z-10 text-xl uppercase tracking-widest pt-1">Home</span>
-                </a>
-                <a href="references.html"
-                    class="relative group inline-flex items-center justify-center w-64 h-24 transition-transform hover:scale-105">
-                    <img src="./assets/cornice_bottoni.png" class="absolute inset-0 w-full h-full object-fill" alt="" />
-                    <span class="relative z-10 text-xl uppercase tracking-widest pt-1">References</span>
+                    class="relative group inline-flex items-center justify-center w-48 h-16 md:w-64 md:h-24 transition-transform hover:scale-105">
+                    <img src="./assets/cornice_bottoni.png"
+                        class="absolute inset-0 w-full h-full object-fill opacity-80" alt="" />
+                    <span class="relative z-10 text-lg md:text-xl uppercase tracking-widest pt-1 font-bold">Home</span>
                 </a>
                 <a href="archive.html"
-                    class="relative group inline-flex items-center justify-center w-64 h-24 transition-transform hover:scale-105">
-                    <img src="./assets/cornice_bottoni.png" class="absolute inset-0 w-full h-full object-fill" alt="" />
-                    <span class="relative z-10 text-xl uppercase tracking-widest pt-1">Archive</span>
-                </a>
-                <a href="story.html"
-                    class="relative group inline-flex items-center justify-center w-64 h-24 transition-transform hover:scale-105">
-                    <img src="./assets/cornice_bottoni.png" class="absolute inset-0 w-full h-full object-fill" alt="" />
-                    <span class="relative z-10 text-xl uppercase tracking-widest pt-1">Story</span>
+                    class="relative group inline-flex items-center justify-center w-48 h-16 md:w-64 md:h-24 transition-transform hover:scale-105">
+                    <img src="./assets/cornice_bottoni.png"
+                        class="absolute inset-0 w-full h-full object-fill opacity-80" alt="" />
+                    <span
+                        class="relative z-10 text-lg md:text-xl uppercase tracking-widest pt-1 font-bold">Archive</span>
                 </a>
             </div>
         </header>
 
-        <!-- STORY SECTION -->
-        <section id="story"
-            class="py-16 px-8 md:px-16 w-full mx-auto relative divide-y divide-brand-blue/30 space-y-24">
+        <!-- SECTION 2: BETH'S WORLD -->
+        <section id="beth-story" class="relative w-full bg-brand-cream/50 pt-24 pb-48 overflow-hidden">
 
-            <!-- PART 1: Bestiaries & Philosophy -->
-            <div class="grid md:grid-cols-2 gap-12 items-start leading-relaxed text-lg md:text-xl">
-                <div class="relative">
-                    <!-- Text Drop Cap -->
-                    <span class="float-left text-9xl font-brand-custom leading-[0.7] mr-4 mt-2 text-brand-blue">N</span>
-                    <p class="mb-6">
-                        ei bestiari antichi, gli animali venivano spesso disegnati in modo impreciso: creature mai
-                        viste, descritte per sentito dire, nate dall’immaginazione più che dall’osservazione.
-                    </p>
-                    <p class="mb-6">
-                        Quelle figure “sbagliate” erano però piene di vita, sospese tra realtà e mito e raccontavano lo
-                        scorrere del tempo e l’evoluzione di interi popoli e culture.
-                    </p>
-                    <p>
-                        Questo progetto quindi, vuole interpretare l’errore come forma creativa: lettere che trovano
-                        armonia nelle loro imperfezioni.
-                    </p>
-                    <p class="text-sm mt-8 text-brand-blue/60 italic border-l-2 border-brand-blue/30 pl-4">
-                        Curve irregolari, dettagli insoliti e proporzioni sbilanciate rendono ogni glifo una piccola
-                        creatura tipografica.
-                    </p>
-                </div>
-                <div>
-                    <p
-                        class="mb-6 first-letter:text-4xl first-letter:font-brand-custom first-letter:float-left first-letter:mr-2 first-letter:mt-[-6px]">
-                        Ogni lettera possiede un’anima, la cui forma segreta richiama inaspettatamente un animale reale.
-                    </p>
-                    <p class="mb-6">
-                        Così, come i bestiari di un tempo, non vogliamo imitare la realtà, ma reinventarla, mostrando
-                        che la forma delle lettere che crediamo banale e scontata, nasconde invece una propria vita.
-                    </p>
-                    <p>
-                        Per raccontare questa storia e presentare il nostro archivio, abbiamo deciso di usare paragrafi,
-                        griglie e decorazione sapientemente tipiche dei libri dell’epoca, in grado perciò di trasmettere
-                        e creare un immaginario verosimile e speciale.
-                    </p>
+            <!-- Floral Top Divider -->
+            <div class="w-full h-16 mb-24 overflow-hidden opacity-40 rotate-180">
+                <img src="./assets/greca.png" class="w-full h-full object-cover" alt="Divider">
+            </div>
+
+            <!-- FRAMED ALPHABET -->
+            <div class="relative w-full max-w-5xl mx-auto mb-24 px-4">
+                <div class="relative group">
+                    <!-- Frame Image? -->
+                    <img src="./assets/Refernce alphabet.png"
+                        class="w-full h-auto drop-shadow-2xl mix-blend-multiply opacity-90 sepia-[.2]" alt="Alphabet" />
                 </div>
             </div>
 
-            <!-- PART 2: The Story of Beth -->
-            <div class="pt-24 relative">
-                <!-- Decorative Divider -->
-                <div class="w-full h-8 mb-16 overflow-hidden opacity-60">
-                    <img src="./assets/greca.png" class="w-full h-full object-cover" alt="Divider">
+            <!-- CONTENT GRID -->
+            <div class="max-w-7xl mx-auto px-8 grid md:grid-cols-12 gap-12 items-start relative z-10">
+
+                <!-- Left Text Column -->
+                <div class="md:col-span-4 text-lg md:text-xl leading-relaxed text-justify">
+                    <h3
+                        class="text-4xl md:text-5xl font-brand-custom font-bold mb-8 uppercase text-center md:text-left">
+                        I Cronoglifidi</h3>
+                    <p
+                        class="mb-6 first-letter:text-5xl first-letter:font-brand-custom first-letter:float-left first-letter:mr-2">
+                        Nel mondo di Beth il tempo era composto da ventisette lettere viventi chiamate Cronoglifìdi.
+                        Non erano semplici segni, ma spiriti dall’aspetto di lettere animate, ognuna modellata sui
+                        movimenti e sull’indole di un animale diverso.
+                    </p>
+                    <p>
+                        Alcune erano rapide e nervose, altre lente e
+                        silenziose; insieme formavano l’alfabeto invisibile che permetteva al tempo di scorrere in
+                        modo ordinato.
+                    </p>
                 </div>
 
-                <div class="text-center mb-16 relative">
-                    <h3 class="text-5xl md:text-6xl font-brand-custom mb-6 uppercase">I Cronoglifidi</h3>
-                    <p class="italic text-brand-blue/60">Una storia di lettere viventi</p>
-                </div>
+                <!-- Center/Right Composition (Portrait + Book + Lion) -->
+                <div class="md:col-span-8 relative h-[600px] md:h-[800px]">
 
-                <div class="grid md:grid-cols-2 gap-12 items-center leading-relaxed text-lg md:text-xl">
-                    <div class="relative order-2 md:order-1">
-                        <p class="mb-6">
-                            Nel mondo di Beth il tempo era composto da ventisette lettere viventi chiamate Cronoglifìdi.
-                            Non erano semplici segni, ma spiriti dall’aspetto di lettere animate, ognuna modellata sui
-                            movimenti e sull’indole di un animale diverso. Alcune erano rapide e nervose, altre lente e
-                            silenziose; insieme formavano l’alfabeto invisibile che permetteva al tempo di scorrere in
-                            modo ordinato.
-                        </p>
-                        <p class="mb-6">
-                            Quando una di queste lettere scomparve, il tempo iniziò a deformarsi. Beth fu la prima ad
-                            accorgersene: il suo corpo cominciò a ringiovanire in modo irregolare, mentre perdeva
-                            ricordi. Ricordava emozioni senza contesto, episodi senza più un prima o un dopo.
-                        </p>
-                        <p>
-                            Fu in quel periodo che entrò in possesso del Glypharium, un libro dalla presenza
-                            inspiegabile, le cui pagine contenevano forme incomplete, lettere in attesa.
-                        </p>
-                    </div>
-
-                    <!-- Beth Portrait with Frame -->
-                    <div class="relative flex justify-center order-1 md:order-2 mb-8 md:mb-0">
-                        <div class="relative w-full max-w-sm mx-auto">
-                            <!-- Portrait Image -->
-                            <img src="./assets/Amelia.png" class="w-full h-auto drop-shadow-xl" alt="Amelia Portrait" />
+                    <!-- Portrait (Center Top) -->
+                    <div class="absolute left-1/2 top-0 -translate-x-1/2 w-64 md:w-80 z-20">
+                        <div class="relative w-full h-full">
+                            <img src="./assets/Cornice.png" class="absolute inset-0 w-full h-full scale-125 opacity-90"
+                                alt="" />
+                            <div
+                                class="w-56 h-72 md:w-64 md:h-80 mx-auto overflow-hidden rounded-full border-4 border-brand-blue/20 bg-brand-cream relative top-8">
+                                <img src="./assets/Amelia.png"
+                                    class="w-full h-full object-cover sepia-[.4] contrast-125" alt="Amelia" />
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="grid md:grid-cols-2 gap-12 items-start leading-relaxed text-lg md:text-xl mt-12">
-                    <div class="relative">
-                        <!-- Lion Decoration -->
-                        <img src="./assets/leone.png"
-                            class="w-full max-w-[250px] mx-auto md:float-left md:mr-6 mb-4 mix-blend-multiply opacity-90"
-                            alt="Lion Illustration" />
-                        </p>
+                    <!-- Book (Bottom Left) -->
+                    <div
+                        class="absolute left-[-2rem] md:left-0 bottom-0 w-72 md:w-96 z-30 transform -rotate-12 hover:rotate-0 transition-transform duration-700">
+                        <img src="./assets/Journal.png" class="w-full h-auto drop-shadow-2xl grayscale-[0.3]"
+                            alt="Journal" />
                     </div>
-                    <div>
-                        <p class="mb-6 pt-4">
-                            Beth intuì che quei segni corrispondevano ai Cronoglifìdi e che trascriverli significava
-                            ricostruire ciò che era andato perduto.
 
-                        <p class="mb-6">
-                            Ogni Cronoglifìde recuperato le restituiva un ricordo. Una lettera silenziosa riportò alla
-                            luce l’attesa dell’infanzia; un’altra, rapida e spezzata, le fece ricordare una fuga
-                            improvvisa; un segno fluido e luminoso le restituì un amore breve e intenso. Beth comprese
-                            che il tempo stava regredendo perché mancavano alcune delle sue lettere fondamentali: senza
-                            di esse certi ricordi non potevano esistere, e senza quei ricordi lei stessa si stava
-                            dissolvendo.
+                    <!-- Lion (Bottom Right) -->
+                    <div class="absolute right-[-2rem] md:right-0 bottom-0 w-80 md:w-[500px] z-10">
+                        <img src="./assets/leone.png"
+                            class="w-full h-auto mix-blend-multiply opacity-90 grayscale-[0.2]" alt="Lion" />
+                    </div>
+
+                    <!-- Right Text Column (Floating) -->
+                    <div
+                        class="absolute right-0 top-0 w-64 text-sm md:text-base italic text-brand-blue/70 hidden md:block text-right">
+                        <p class="mb-4">
+                            Quando una di queste lettere scomparve, il tempo iniziò a deformarsi. Beth fu la prima ad
+                            accorgersene...
                         </p>
                         <p>
-                            Quando l’ultima lettera fu trascritta, il tempo smise di arretrare. Beth non tornò
-                            semplicemente a invecchiare: tornò a riconoscersi. La sua storia parlava di identità,
-                            memoria e del tentativo di ritrovarsi mentre tutto, fuori e dentro di lei, sembrava muoversi
-                            al contrario.
+                            Beth comprese che il tempo stava regredendo perché mancavano alcune delle sue lettere
+                            fondamentali.
                         </p>
                     </div>
+
                 </div>
             </div>
 
+            <!-- Continuation Text (Full Width Bottom) -->
+            <div class="max-w-4xl mx-auto px-8 mt-24 text-center text-lg md:text-xl leading-relaxed">
+                <p class="mb-8">
+                    Quando l’ultima lettera fu trascritta, il tempo smise di arretrare. Beth non tornò
+                    semplicemente a invecchiare: tornò a riconoscersi. La sua storia parlava di identità,
+                    memoria e del tentativo di ritrovarsi mentre tutto, fuori e dentro di lei, sembrava muoversi
+                    al contrario.
+                </p>
+            </div>
         </section>
 
-        <divider class="relative mt-32 pb-24 px-4">
-            <div class="max-w-5xl mx-auto">
+        <!-- FOOTER -->
+        <divider class="relative block pt-12 pb-24 px-4 bg-transparent">
+            <div class="max-w-5xl mx-auto opacity-70">
                 <img src="./assets/footer.png" class="w-full h-auto object-contain" alt="Footer Decoration" />
             </div>
         </divider>
 
-
-
-        <!-- Archive Section Removed -->
-
     </div>
 
-    <script src="./script.js"></script>
+    <script src="./assets/seo-tracking.js"></script>
 </body>
 
 </html>
