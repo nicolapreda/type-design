@@ -4,7 +4,7 @@ module.exports = {
     extend: {
       fontFamily: {
         sans: ['Old Standard TT', '-apple-system', 'BlinkMacSystemFont', 'SF Pro Display', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'sans-serif'],
-        serif: ['Old Standard TT', 'Georgia', 'Cambria', 'Times New Roman', 'Times', 'serif'],
+        serif: ['GlyfariumDef', 'Old Standard TT', 'Georgia', 'Cambria', 'Times New Roman', 'Times', 'serif'],
         'brand-custom': ['GlyfariumDef', 'serif'],
       },
       colors: {
